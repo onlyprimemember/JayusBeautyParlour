@@ -346,7 +346,7 @@ h1 {
     }
 
     function saveToSheet(name, phone, date, time, services, total, discount, finalAmount) {
-      fetch("https://script.google.com/macros/s/AKfycbzMGjnmu1kQZcBkaT7qJU6AFgoAfVl4QskID0VqFFGGZ-t88sHRc2z1tZLB-E59o7x4Iw/exec", {
+      fetch("https://script.google.com/macros/s/AKfycbzCkg5XahDvalKhDhbxtEQtVcvtPl3SimZcr9r9EGYvxP7FnYwcKxKBgtw443rhUGJ6Mg/exec", {
         method: "POST",
         headers: { "Content-Type": "text/plain;charset=utf-8" },
         body: JSON.stringify({ name, phone, date, time, services, total, discountPercent: discount, discounted: finalAmount })
